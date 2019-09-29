@@ -25,5 +25,19 @@ def roller():
             break
     return dice_list
 
+# print(roller())
 
-print(roller())
+def roller1():
+    # Ask the user how many dice(d6) to roll and appends them to a list, then prints the result.
+
+    dice_list = []
+    a = int(input("Roll how many dice to roll: "))
+    while True:
+        dice = random.randint(1, 6)
+        dice_list.append(dice)
+        dice_list.sort()
+        if len(dice_list) >= a:
+            break
+    print(dice_list)
+
+# roller1()
